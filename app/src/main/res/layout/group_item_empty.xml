@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/dividerColor"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/group_item_top_bottom_padding">
+
+        <TextView
+            android:id="@+id/group_first_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingStart="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:text="Group One"/>
+
+        <TextView
+            android:layout_below="@+id/group_first_text_view"
+            android:id="@+id/group_second_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingStart="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:text="Group One"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/dividerColor"/>
+</LinearLayout>
